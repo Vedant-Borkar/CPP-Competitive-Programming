@@ -1,5 +1,5 @@
-//Problem:
-//Name:
+//Problem:https://codeforces.com/problemset/problem/149/A
+//Name: Business Trip
 //Author:Vedant Borkar
 #include<iostream>  
 #include<algorithm>
