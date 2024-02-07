@@ -13,9 +13,12 @@ int main(){
     cin>>arr[i];
   }
   sort(arr,arr+12); int count=0,sum=0,i=11;
-  while(sum<k){
+  while(sum<k && i>=0){
     sum+=arr[i--];count++;
   }
-  cout<<count;
+  if(sum>=k)
+    cout<<count;
+  else 
+    cout<<"-1";
   return 0;
 }
