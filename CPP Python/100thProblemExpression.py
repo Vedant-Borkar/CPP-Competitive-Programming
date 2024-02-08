@@ -1,6 +1,7 @@
 #Problem:https://codeforces.com/problemset/problem/479/A
 #Name:Expression
 #Author:Vedant Borkar
+# 100th PROBLEM ON CFFFF
 def exp(a,b,c):
   x=[0,0,0,0,0,0]
   x[0]=a+b+c
