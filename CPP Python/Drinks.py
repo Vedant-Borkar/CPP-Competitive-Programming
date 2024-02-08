@@ -1,4 +1,4 @@
-#Problem:https://codeforces.com/problemset/problem/122/A
+#Problem:https://codeforces.com/problemset/problem/200/B
 #Name:Drinks
 #Author:Vedant Borkar
 def drinks(n):
