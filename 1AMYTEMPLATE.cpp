@@ -4,6 +4,7 @@
 #include<iostream>  
 #include<algorithm>
 #include<vector>
+#include<string>
 #include<cmath>
 #define ll = long long;
 using namespace std;
