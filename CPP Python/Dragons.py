@@ -18,7 +18,7 @@ def dragon(s,n):
       count=1
       break
   if(count==1):
-    print("N0")
+    print("NO")
   else:
     print("YES")
 l=[int(x) for x in input().split(' ')]
