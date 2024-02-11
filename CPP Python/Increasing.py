@@ -1,5 +1,5 @@
-#Problem:
-#Name:
+#Problem:https://codeforces.com/contest/1742/problem/B
+#Name:Increasing
 #Author:Vedant Borkar
 def inc(n,count):
   l=[int(x) for x in input().split()]
