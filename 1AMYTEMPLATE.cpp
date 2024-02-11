@@ -1,11 +1,7 @@
 //Problem:
 //Name:
 //Author:Vedant Borkar
-#include<iostream>  
-#include<algorithm>
-#include<vector>
-#include<string>
-#include<cmath>
+#include<bits/stdc++.h>
 #define ll = long long;
 using namespace std;
 int main(){

@@ -1,3 +1,6 @@
+//Problem:https://codeforces.com/problemset/problem/1742/D
+//Name: Coprime
+//Author:Vedant Borkar
 #include<bits/stdc++.h>
 using namespace std;
 int coprime(int n, int max) {

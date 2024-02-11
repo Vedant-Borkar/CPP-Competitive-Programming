@@ -1,5 +1,5 @@
-#Problem:
-#Name:
+#Problem:https://codeforces.com/problemset/problem/1742/D
+#Name:Coprime
 #Author:Vedant Borkar
 from math import gcd
 def coprime(n,max):
