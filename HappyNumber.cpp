@@ -10,9 +10,9 @@ bool isHappy(long long n) {
             n=sum;count++;
         }
         if(sum==1)
-            return true;
+            cout<<"YES";
         else
-            return false;
+            cout<<"NO";
 }
 int main(){
   ios_base::sync_with_stdio(false);
