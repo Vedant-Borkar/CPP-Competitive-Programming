@@ -1,5 +1,5 @@
-//Problem:
-//Name:
+//Problem:https://codeforces.com/problemset/problem/1703/D
+//Name:D. Double Strings
 //Author:Vedant Borkar
 #include<bits/stdc++.h>
 #define ll = long long;
