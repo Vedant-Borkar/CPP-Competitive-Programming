@@ -25,7 +25,7 @@ int main(){
     }
     string s;
     cin>>s;
-    vector<int> ans;i=0;
+    vector<int> ans(0,n);i=0;
     while(arr.size()>0){
       long long b=Prod(arr)%m;
       ans.push_back(b);
