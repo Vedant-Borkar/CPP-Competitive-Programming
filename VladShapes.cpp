@@ -11,28 +11,27 @@ int main(){
   cin>>t;
   while(t-->0){
     cin>>n;
-    int arr[n][n];
+    vector<string> arr(n);
     for(i=0;i<n;i++){
-        for(j=0;j<n;j++){
-          cin>>arr[i][j];
+          cin>>arr[i];
       }
-    }
     bool square=true;
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
           if(arr[i][j]==1){
-            if(arr[i][j+1]==1){
+            if(i+1<n && j+1<n && arr[i+1][j] == '1' && arr[i][j+1] == '1'){
               square=true;
+              break;
             }
             else
             square=false;
           }
         }
     }
-    if(square)
-      cout<<"SQUARE";
+    if(square==true)
+      cout<<"SQUARE\n";
     else
-    cout<<"TRIANGLE";
+    cout<<"TRIANGLE\n";
   }
   return 0;
 }
