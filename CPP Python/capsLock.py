@@ -3,14 +3,24 @@
 #Author:Vedant Borkar
 def Solution(s):
   str=s.split(" ")
-  s=[]
-  for word in str:
+  s1=[]
+  count=0
+  for i in range(len(str)):
+    word=str[i]
     if(word[0].islower()):
-        s.append(word.lower())
-        
-  # s1=""
-  # for word in str:
-  #   s1+=word+" "
-  # print(s1)
-
+        if(word[1].isupper()):
+          count+=1
+          s1.append(word.lower())
+          s=s1[i]
+          s=s.lower()
+          s=s[0].upper()+s[1:]
+          s1[i]=s
+    elif count>0:
+       s1.append(word.lower())  
+    else:
+       s1.append(word)      
+  ans=""
+  for i in s1:
+     ans+=i+" "
+  print(ans.strip())
 Solution(input())
