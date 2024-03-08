@@ -3,13 +3,14 @@
 #Author:Vedant Borkar
 def Solution(s):
   str=s.split(" ")
+  s=[]
   for word in str:
     if(word[0].islower()):
-        word1=word.lower()
-        word=word1
-  s1=""
-  for word in str:
-    s1+=word+" "
-  print(s1)
+        s.append(word.lower())
+        
+  # s1=""
+  # for word in str:
+  #   s1+=word+" "
+  # print(s1)
 
 Solution(input())
