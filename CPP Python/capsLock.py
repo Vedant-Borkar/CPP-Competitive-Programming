@@ -16,7 +16,7 @@ def Solution(s):
           s=s[0].upper()+s[1:]
           s1[i]=s
     elif count>0:
-       s1.append(word.lower())  
+       s1.append(word.lower())    
     else:
        s1.append(word)      
   ans=""
