@@ -11,6 +11,17 @@ int main(){
   cin>>t;
   while(t-->0){
     cin>>n;
+    int toggle=0;
+    for(i=0;i<n*2;i++){
+      for(j=0;j<n*2;j++){
+        if(toggle%2==0)
+          cout<<"##";
+        else
+          cout<<"**";
+        toggle++;
+      }
+      cout<<"\n";
+    }
   }
   return 0;
 }
