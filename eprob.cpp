@@ -5,15 +5,11 @@
 
 using namespace std;
 
-// Function to check if the given string can be constructed with repetition of substring of given length
-bool isValidSubstring(const string& s, int len) {
-    int n = s.length();
+// Function to check if a substring starting from index 'start' of length 'len' matches with the given pattern
+bool isValidSubstring(const string& s, int start, int len, const string& pattern) {
     for (int i = 0; i < len; ++i) {
-        char c = s[i];
-        for (int j = i; j < n; j += len) {
-            if (s[j] != c && s[j] != '*') // '*' denotes the ignored character
-                return false;
-        }
+        if (s[start + i] != pattern[i] && pattern[i] != '*') // '*' denotes the ignored character
+            return false;
     }
     return true;
 }
@@ -38,9 +34,19 @@ int findShortestSubstring(const string& s) {
     int minLen = n;
     for (int factor : factors) {
         if (factor == 1) continue; // Ignore factor 1
-        string substr = s.substr(0, factor);
-        if (isValidSubstring(s, factor)) {
-            minLen = min(minLen, factor);
+        for (int i = 0; i <= n - factor; ++i) {
+            string substr = s.substr(i, factor);
+            bool valid = true;
+            for (int j = 0; j < n; j += factor) {
+                if (!isValidSubstring(s, j, factor, substr)) {
+                    valid = false;
+                    break;
+                }
+            }
+            if (valid) {
+                minLen = min(minLen, factor);
+                break; // Break early if a match is found for this factor
+            }
         }
     }
     return minLen;
