@@ -7,9 +7,10 @@ using namespace std;
 int main(){
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
-  int i,n,j,k,t,count=0,sum=0;
+  int i,n,j,k,t,sum=0;
   cin>>t;
   while(t-->0){
+    int count=0;
     cin>>n;
   }
   return 0;
