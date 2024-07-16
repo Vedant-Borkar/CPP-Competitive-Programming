@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Hashmaps",
+      "request": "launch",
+      "mainClass": "Hashmaps",
+      "projectName": "CPP Competitive Programming_bf90bed2"
+    },
+    {
+      "type": "java",
       "name": "mapset",
       "request": "launch",
       "mainClass": "mapset",

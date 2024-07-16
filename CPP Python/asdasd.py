@@ -4,7 +4,7 @@ def solve():
     n = ini()
     a = ini()
     b = ini()
-    arr = in(n*n)
+    arr = in_(n*n)
     
     arr.sort()
     map = defaultdict(int)
